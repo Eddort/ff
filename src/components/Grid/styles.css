@@ -5,4 +5,5 @@
   width: auto;
   height: auto;
   min-width: auto;
-  min-height: auto; }
+  min-height: auto;
+  border-left: 1px solid grey; }

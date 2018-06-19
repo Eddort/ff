@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './styles.css';
 
-function Header() {
-    return (
-        <div className="header">
-        </div>
-    )
-}
+class Header extends Component {
+    constructor() {
+		super();
+		this.state = {};
+    }
+    render() {
+        return (
+            <div className="header">
+                {this.props.children}
+            </div>
+        )
+    }
+}   
 export default Header;

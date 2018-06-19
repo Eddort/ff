@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './styles.css';
 
-function DragableWidgetImage() {
+
+class DragableWidgetImage extends Component {
+    constructor() {
+		super();
+		this.state = {};
+    }
+    render() {
+        const {label} = this.props;
     return (
-        <div className="button">
-            <span> </span>
-        </div>
-    )
+        <span className="button">{label}</span>
+        )
+    }
 }
 export default DragableWidgetImage;

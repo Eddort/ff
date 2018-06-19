@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './styles.css';
 
-function Content() {
+class WidgetMenu extends Component {
+    constructor() {
+		super();
+		this.state = {};
+    }
+    render() {
+        const {label} = this.props;
     return (
-        <div className="button">
-            <span> </span>
+        <div className="widget">
+            <span>{label}</span>
+            {this.props.children}
         </div>
-    )
+        )
+    }
 }
-export default Content;
+export default WidgetMenu;

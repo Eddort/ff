@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './styles.css';
 
-function Content() {
-    const {label} = this.props;
+class DragableWidgetButton extends Component {
+    constructor() {
+		super();
+		this.state = {};
+    }
+    render() {
+        const {label} = this.props;
     return (
         <div className="widget button">
             <span>{label}</span>
         </div>
-    )
+        )
+    }
 }
-export default Content;
+export default DragableWidgetButton;

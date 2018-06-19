@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './styles.css';
 
-function OnOffWidgetContacts() {
+class OnOffWidgetContacts extends Component {
+    constructor() {
+		super();
+		this.state = {};
+    }
+    render() {
+        const {label} = this.props;
     return (
-        <div className="button">
-            <span> </span>
+        <div className="widget">
+            <span>{label} </span>
         </div>
-    )
+        )
+    }
 }
 export default OnOffWidgetContacts;

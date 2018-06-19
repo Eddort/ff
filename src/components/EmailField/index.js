@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './styles.css';
 
-function Content() {
+class EmailField extends Component {
+    constructor() {
+		super();
+		this.state = {};
+    }
+    render() {
+        const {label} = this.props;
     return (
-        <div className="button">
-            <span> </span>
-        </div>
-    )
+        <span className="field">{label}</span>
+        )
+    }
 }
-export default Content;
+export default EmailField;

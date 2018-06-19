@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './styles.css';
 
-function Label(props) {
-    const {label} = props
+class Label extends Component {
+    constructor() {
+		super();
+		this.state = {};
+    }
+    render() {
+        const {label} = this.props;
     return (
-        <span 
-            className="label">
+        <span className="label">
                 {label}
         </span>
-
-    )
+        )
+    }
 }
-export default Label
+export default Label;

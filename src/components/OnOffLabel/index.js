@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './styles.css';
 
-function OnOffLabel() {
+class OnOffLabel extends Component {
+    constructor() {
+		super();
+		this.state = {};
+    }
+    render() {
+        const {label} = this.props;
     return (
         <div className="button">
-            <span> </span>
+            <span>{label}</span>
         </div>
-    )
+        )
+    }
 }
 export default OnOffLabel;

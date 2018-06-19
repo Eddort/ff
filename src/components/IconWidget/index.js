@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './styles.css';
 
-function IconWidget() {
+class IconWidget extends Component {
+    constructor() {
+		super();
+		this.state = {};
+    }
+
+    render() {
+        const {label} = this.props;
     return (
-        <div className="button">
-            <span> </span>
+        <div className="widget">
+            {label}
         </div>
-    )
+        )
+    }
 }
 export default IconWidget;

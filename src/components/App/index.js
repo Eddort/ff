@@ -56,7 +56,7 @@ class App extends Component {
                 </Grid>
               <IconWidget label="icon"></IconWidget>
               <TextField label="title"></TextField>
-            <WidgetMenu>
+            <WidgetMenu label="menu"/>
               <Grid>
                 <MenuItem label="Главная"></MenuItem>
                 <MenuItem label="О Нас"></MenuItem>
@@ -64,35 +64,51 @@ class App extends Component {
                 <MenuItem label="Портфолио"></MenuItem>
                 <MenuItem label="Команда"></MenuItem>
               </Grid>
-            </WidgetMenu>
             </Grid>
           </Grid>
         </Header>
+
+
         <Content>
           <Grid>
             <Label label="content"/>
               <Grid>
-                <Label label="block"/>
-                <AdaptiveGridField xs="12" sm="12" md="3"/>
-                <AdaptiveGridField xs="12" sm="12" md="6">
-                  <Grid>
-                    <DragableWidgetText label="text">
-                      #### Студия дизайна 
-                      ## Apartment 
-                      Лучшие решения, актуальный дизайн, непревзойденное качество — все это  о нашей студии <ButtonCollapse/>
-                    </DragableWidgetText>
-                  </Grid>
-                </AdaptiveGridField>
-                <AdaptiveGridField xs="12" sm="12" md="6"/>
+
                 <Label label="block"/>
                   <Grid>
-                    <DragableWidgetImage label="image"/>
-                    <DragableWidgetText label="text">
-                      ## О Нас <ButtonCollapse/>
-                    </DragableWidgetText>
-                    <DragableWidgetButton label="button">Подробнее</DragableWidgetButton>
+                    <AdaptiveGridField xs="12" sm="12" md="3"/>
+                    <AdaptiveGridField xs="12" sm="12" md="6">
+                      <Grid>
+                        <DragableWidgetText label="text">
+                          #### Студия дизайна 
+                          ## Apartment 
+                          Лучшие решения, актуальный дизайн, непревзойденное качество — все это  о нашей студии <ButtonCollapse/>
+                        </DragableWidgetText>
+                      </Grid>
+                    </AdaptiveGridField>
+                    <AdaptiveGridField xs="12" sm="12" md="6"/>
                   </Grid>
-                  <Label label="block"/>
+
+                <Label label="block"/>
+                  <Grid>
+                    <AdaptiveGridField xs="12" sm="12" md="1"/>
+                    <AdaptiveGridField xs="12" sm="12" md="5">
+                      <Grid>
+                        <DragableWidgetImage label="image"/>
+                      </Grid>
+                    </AdaptiveGridField>
+                    <AdaptiveGridField xs="12" sm="12" md="1"/>
+                    <AdaptiveGridField xs="12" sm="12" md="5">
+                      <Grid>
+                        <DragableWidgetText label="text">
+                          ## О Нас <ButtonCollapse/>
+                        </DragableWidgetText>
+                        <DragableWidgetButton label="button">Подробнее
+                        </DragableWidgetButton>
+                      </Grid>
+                    </AdaptiveGridField>
+                  </Grid>
+                  {/* <Label label="block"/>
                   <Grid>
                     <DragableWidgetText label="text">
                       ## Услуги
@@ -171,13 +187,13 @@ class App extends Component {
                       <DragableWidgetText label="text">
                         ### Качество<ButtonCollapse/>
                       </DragableWidgetText>
-                    </Grid>
-              </Grid>
+                    </Grid>*/}
+              </Grid> 
           </Grid>
         </Content>
         <Footer>
           <Grid>
-          <OnOffLabel label="header"></OnOffLabel>
+          <OnOffLabel label="footer"></OnOffLabel>
             <Grid>
             <OnOffWidgetSocialNetwork label="social-network"></OnOffWidgetSocialNetwork>
                 <Grid>
@@ -186,11 +202,10 @@ class App extends Component {
                   <URLField label="twitter" value=""></URLField>
                   <ButtonCollapse/>
                 </Grid>
-            <OnOffWidgetCopyright label="copyright">
+            <OnOffWidgetCopyright label="copyright"/>
               <Grid>
                 <TextField label="text">© uKit, 2018</TextField>
               </Grid>
-            </OnOffWidgetCopyright>
             </Grid>
           </Grid>
         </Footer>
