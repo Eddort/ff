@@ -1,4 +1,15 @@
 .button {
-  display: inline-block;
-  width: 28px;
-  height: 16px; }
+  display: flex;
+  font-size: 8px;
+  font-family: monospace;
+  border: none;
+  background-color: #e6e2da;
+  padding-left: 4px;
+  padding-right: 5px;
+  border-radius: 4px;
+  margin: 0;
+  height: 16px;
+  min-width: 16px;
+  width: auto;
+  cursor: pointer;
+  margin-bottom: 4px; }

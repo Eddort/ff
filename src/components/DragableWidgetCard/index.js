@@ -10,7 +10,7 @@ class DragableWidgetCard extends Component {
         const {label} = this.props;
     return (
         <div className="widget">
-            {label}
+            <span>{label}</span>
         </div>
         )
     }

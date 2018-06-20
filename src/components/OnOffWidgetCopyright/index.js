@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './styles.css';
+import Label from '../Label'
 
 class OnOffWidgetCopyright extends Component {
     constructor() {
@@ -10,7 +11,7 @@ class OnOffWidgetCopyright extends Component {
         const {label} = this.props;
     return (
         <div className="widget">
-            <span>{label} </span>
+            <Label label={label}/>
         </div>
         )
     }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './styles.css';
+import Label from '../Label'
 
 
 class DragableWidgetImage extends Component {
@@ -10,7 +11,7 @@ class DragableWidgetImage extends Component {
     render() {
         const {label} = this.props;
     return (
-        <span className="button">{label}</span>
+        <Label label={label}/>
         )
     }
 }

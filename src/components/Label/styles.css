@@ -1,2 +1,8 @@
 .label {
-  display: flex; }
+  font-size: 12px;
+  font-family: monospace;
+  color: gray;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-right: 6px;
+  margin-left: 0; }

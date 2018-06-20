@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './styles.css';
+import Label from '../Label'
 
 class IconWidget extends Component {
     constructor() {
@@ -9,9 +10,13 @@ class IconWidget extends Component {
 
     render() {
         const {label} = this.props;
+        const {value} = this.props;
+        const {placeholder} = this.props;
+        const {src} = this.props;
     return (
-        <div className="widget">
-            {label}
+        <div className="iconWidget">
+            <Label label={label}/>
+            <img className="img" src={src}/>
         </div>
         )
     }

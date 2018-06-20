@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './styles.css';
+import Label from '../Label'
 
 class WidgetMenu extends Component {
     constructor() {
@@ -9,8 +10,8 @@ class WidgetMenu extends Component {
     render() {
         const {label} = this.props;
     return (
-        <div className="widget">
-            <span>{label}</span>
+        <div className="iconWidget">
+            <Label label={label}/>
             {this.props.children}
         </div>
         )

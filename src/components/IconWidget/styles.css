@@ -1,2 +1,12 @@
 .grid {
   margin-left: 20px; }
+
+.iconWidget {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4px; }
+
+.img {
+  cursor: pointer; }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './styles.css';
+import Label from '../Label';
 
 class NumberField extends Component {
     constructor() {
@@ -8,8 +9,13 @@ class NumberField extends Component {
     }
     render() {
         const {label} = this.props;
+        const {placeholder} = this.props;
+        const {value} = this.props;
     return (
-        <span className="field">{label}</span>
+        <form className="form">
+        <Label label={label}/>
+        <input className="input" type="text" placeholder={placeholder} value={value}/>
+    </form>
         )
     }
 }

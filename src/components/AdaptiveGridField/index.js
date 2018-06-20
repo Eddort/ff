@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './styles.css';
+import Label from '../Label'
 
 class AdaptiveGridField extends Component {
     constructor() {
@@ -11,14 +12,13 @@ class AdaptiveGridField extends Component {
         const {sm} = this.props;
         const {md} = this.props;
     return (
+        <div>
         <div className="adaptiveGrid">
-            <span className="key">xs-{xs}
-            </span>
-            <span className="key">sm-{sm}
-            </span>
-            <span className="key">md-{md}
-            </span>
-            {this.props.children}
+            <Label label='xs-'>{xs}</Label>
+            <Label label='sm-'>{sm}</Label>
+            <Label label='md-'>{md}</Label>
+        </div>
+        {this.props.children}
         </div>
         )
     }

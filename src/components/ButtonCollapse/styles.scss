@@ -1,5 +1,18 @@
+@import '../../scss/variables.scss';
+
 .button {
-	display: inline-block;
-	width: 28px;
+	display: flex;
+	font-size: 8px;
+	font-family: monospace;
+	border: none;
+	background-color: $collapse-color;
+	padding-left: 4px;
+	padding-right: 5px;
+	border-radius: 4px;
+	margin: 0;
 	height: 16px;
+	min-width: 16px;
+	width: auto;
+	cursor: pointer;
+	margin-bottom: 4px;
 }

@@ -33,29 +33,29 @@ class App extends Component {
             <Grid>
               <OnOffWidgetContacts label="contacts"></OnOffWidgetContacts>
                 <Grid>
-                  <TextField label="name"></TextField>
+                  <TextField label="name" placeholder="Введите значение"></TextField>
                   <NumberField label="phone" value="+7(900)123-45-87"></NumberField>
                   <OnOffLabel label="contact"></OnOffLabel>
                   <Grid>
-                    <TextField label="country"></TextField>
-                    <TextField label="city"></TextField>
-                    <TextField label="street"></TextField>
-                    <TextField label="room"></TextField>
-                    <NumberField label="postal-code"></NumberField>
+                    <TextField label="country" placeholder="Введите значение"></TextField>
+                    <TextField label="city" placeholder="Введите значение"></TextField>
+                    <TextField label="street" placeholder="Введите значение"></TextField>
+                    <TextField label="room" placeholder="Введите значение"></TextField>
+                    <NumberField label="postal-code" placeholder="Введите значение"></NumberField>
                   </Grid>
-                  <TextField label="skype"></TextField>
-                  <EmailField label="e-mail"></EmailField>
-                  <TextField label="company-name"></TextField>
+                  <TextField label="skype" placeholder="Введите значение"></TextField>
+                  <EmailField label="e-mail" placeholder="Введите значение"></EmailField>
+                  <TextField label="company-name" placeholder="Введите значение"></TextField>
                 </Grid>
               <OnOffWidgetSocialNetwork label="social-network"></OnOffWidgetSocialNetwork>
                 <Grid>
-                  <URLField label="facebook" value="facebook.com/ukitcom"></URLField>
-                  <URLField label="vk" value=""></URLField>
-                  <URLField label="twitter" value=""></URLField>
+                  <URLField label="facebook" placeholder="Введите значение" value="facebook.com/ukitcom"></URLField>
+                  <URLField label="vk" placeholder="Введите значение" value=""></URLField>
+                  <URLField label="twitter" placeholder="Введите значение" value=""></URLField>
                   <ButtonCollapse/>
                 </Grid>
-              <IconWidget label="icon"></IconWidget>
-              <TextField label="title"></TextField>
+              <IconWidget label="icon" src="images/icon1.png"></IconWidget>
+              <TextField label="title" placeholder="Введите значение"></TextField>
             <WidgetMenu label="menu"/>
               <Grid>
                 <MenuItem label="Главная"></MenuItem>
@@ -73,7 +73,6 @@ class App extends Component {
           <Grid>
             <Label label="content"/>
               <Grid>
-
                 <Label label="block"/>
                   <Grid>
                     <AdaptiveGridField xs="12" sm="12" md="3"/>
@@ -103,7 +102,7 @@ class App extends Component {
                         <DragableWidgetText label="text">
                           ## О Нас <ButtonCollapse/>
                         </DragableWidgetText>
-                        <DragableWidgetButton label="button">Подробнее
+                        <DragableWidgetButton label="button" value="Подробнее">Подробнее
                         </DragableWidgetButton>
                       </Grid>
                     </AdaptiveGridField>
@@ -197,14 +196,14 @@ class App extends Component {
             <Grid>
             <OnOffWidgetSocialNetwork label="social-network"></OnOffWidgetSocialNetwork>
                 <Grid>
-                  <URLField label="facebook" value="facebook.com/ukitcom"></URLField>
-                  <URLField label="vk" value=""></URLField>
-                  <URLField label="twitter" value=""></URLField>
+                  <URLField label="facebook" value="facebook.com/ukitcom" placeholder="Введите значение"></URLField>
+                  <URLField label="vk" value="" placeholder="Введите значение"></URLField>
+                  <URLField label="twitter" value="" placeholder="Введите значение"></URLField>
                   <ButtonCollapse/>
                 </Grid>
             <OnOffWidgetCopyright label="copyright"/>
               <Grid>
-                <TextField label="text">© uKit, 2018</TextField>
+                <TextField label="text" value="© uKit, 2018"/>
               </Grid>
             </Grid>
           </Grid>

@@ -1,2 +1,16 @@
-.grid {
-  margin-left: 20px; }
+.onofflabel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.switcher {
+  font-size: 12px;
+  font-family: monospace;
+  border: none;
+  background-color: rgba(39, 174, 96, 0.3);
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 4px;
+  margin: 0;
+  height: 16px;
+  width: auto; }

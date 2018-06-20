@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './styles.css';
+import Label from '../Label'
 
 class DragableWidgetButton extends Component {
     constructor() {
@@ -9,8 +10,8 @@ class DragableWidgetButton extends Component {
     render() {
         const {label} = this.props;
     return (
-        <div className="widget button">
-            <span>{label}</span>
+        <div className="widget">
+            <Label label={label}/>
         </div>
         )
     }

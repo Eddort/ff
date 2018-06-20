@@ -3,9 +3,8 @@ import styles from './styles.css';
 
 function ButtonCollapse() {
     return (
-        <div className="button">
-            <span>•••</span>
-        </div>
+        <button className="button">•••
+        </button>
     )
 }
 export default ButtonCollapse;

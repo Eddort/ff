@@ -1,2 +1,16 @@
-.field {
+.input {
+  border: none; }
+
+.input::placeholder {
+  font-style: italic;
+  font-size: 12px;
+  font-family: monospace;
+  color: lightgrey; }
+
+.input::value {
+  font-size: 12px;
+  font-family: monospace;
+  color: black; }
+
+.form {
   display: flex; }
