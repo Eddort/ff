@@ -5,7 +5,7 @@ import IframeView from '../IframeView'
 
 export default () => {
     return (
-        <SplitView>
+        <SplitView split="vertical">
             <App/>
             <IframeView src="http://frv2fhg22.ukit.me/"/>
         </SplitView>

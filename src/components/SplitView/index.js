@@ -8,12 +8,16 @@ class SplitView extends Component {
     
     render() {
         const {
-            children
+            children,
+            split
         } = this.props
         
         return (
             <SplitPane
-                split="vertical"
+                split={split}
+                minSize={300}
+                maxSize={-300}
+                // split="horizontal"
                 defaultSize="50%"
             >
                {children}
